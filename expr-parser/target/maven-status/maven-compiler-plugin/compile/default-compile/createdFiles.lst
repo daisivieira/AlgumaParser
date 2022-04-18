@@ -1,0 +1,12 @@
+br\ufscar\dc\compiladores\expr\parser\ExpressoesParser$ExpressaoContext.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesParser.class
+br\ufscar\dc\compiladores\expr\parser\ExprParser.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesLexer.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesParser$TermoContext.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesParser$Expressao2Context.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesListener.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesParser$ProgramaContext.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesParser$Termo2Context.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesBaseListener.class
+br\ufscar\dc\compiladores\expr\parser\Principal.class
+br\ufscar\dc\compiladores\expr\parser\ExpressoesParser$FatorContext.class
