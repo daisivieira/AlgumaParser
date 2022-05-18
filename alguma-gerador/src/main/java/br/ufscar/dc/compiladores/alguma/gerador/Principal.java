@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.CommonTokenStream;
+import org.antlr.v4.runtime.CommonTokenStream;;
 
 /**
  *
@@ -32,6 +32,12 @@ public class Principal {
             agc.visitPrograma(arvore);
             try(PrintWriter pw = new PrintWriter(args[1])) {
                 pw.print(agc.saida.toString());
+            }
+            
+            AlgumaGeradorPcodigo agp = new AlgumaGeradorPcodigo();
+            String pcod = agp.visitPrograma(arvore);
+            try(PrintWriter pw = new PrintWriter(args[2])) {
+                pw.print(pcod);
             }
         }
     }

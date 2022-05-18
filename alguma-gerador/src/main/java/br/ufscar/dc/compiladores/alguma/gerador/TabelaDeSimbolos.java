@@ -23,10 +23,16 @@ public class TabelaDeSimbolos {
 
         String nome;
         TipoAlguma tipo;
+        int endereco;
 
         private EntradaTabelaDeSimbolos(String nome, TipoAlguma tipo) {
             this.nome = nome;
             this.tipo = tipo;
+        }
+        
+        private EntradaTabelaDeSimbolos(String nome, int endereco) {
+            this.nome = nome;
+            this.endereco = endereco;
         }
     }
 
@@ -39,6 +45,10 @@ public class TabelaDeSimbolos {
     public void adicionar(String nome, TipoAlguma tipo) {
         tabela.put(nome, new EntradaTabelaDeSimbolos(nome, tipo));
     }
+    
+    public void adicionar(String nome, int endereco) {
+        tabela.put(nome, new EntradaTabelaDeSimbolos(nome, endereco));
+    }
 
     public boolean existe(String nome) {
         return tabela.containsKey(nome);
@@ -46,5 +56,9 @@ public class TabelaDeSimbolos {
 
     public TipoAlguma verificar(String nome) {
         return tabela.get(nome).tipo;
+    }
+    
+    public int verificarEndereco(String nome) {
+        return tabela.get(nome).endereco;
     }
 }
